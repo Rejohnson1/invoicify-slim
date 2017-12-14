@@ -11,18 +11,17 @@ import com.lmig.gfc.invoicify.models.RateBasedBillingRecord;
 import com.lmig.gfc.invoicify.models.User;
 import com.lmig.gfc.invoicify.services.BillingRepository;
 import com.lmig.gfc.invoicify.services.CompanyRepository;
-import com.lmig.gfc.invoicify.services.UserRepository;
 
 @Controller
 @RequestMapping("/billing-records/rate-baseds")
 public class RateBasedBillingRecordController {
 
-	private UserRepository ur;
+	// private UserRepository ur;
 	private BillingRepository br;
 	private CompanyRepository cr;
 
-	public RateBasedBillingRecordController(UserRepository ur, BillingRepository br, CompanyRepository cr) {
-		this.ur = ur;
+	public RateBasedBillingRecordController(/* UserRepository ur, */ BillingRepository br, CompanyRepository cr) {
+		// this.ur = ur;
 		this.br = br;
 		this.cr = cr;
 	}
