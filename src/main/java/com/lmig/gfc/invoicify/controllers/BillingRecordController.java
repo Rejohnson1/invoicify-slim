@@ -34,7 +34,7 @@ public class BillingRecordController {
 		// Get all the companies and add them to the model and view with the key
 		// "companies"
 		List<Company> companies = cr.findAll();
-		mv.addObject("records", companies);
+		mv.addObject("companies", companies);
 		return mv;
 	}
 

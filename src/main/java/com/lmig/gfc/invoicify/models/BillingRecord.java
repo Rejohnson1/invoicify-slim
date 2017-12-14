@@ -21,6 +21,8 @@ public abstract class BillingRecord {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
+
+	@ManyToOne
 	private User createdBy;
 	private String description;
 
