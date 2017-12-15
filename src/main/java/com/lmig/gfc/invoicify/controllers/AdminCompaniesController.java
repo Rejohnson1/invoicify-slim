@@ -22,6 +22,8 @@ public class AdminCompaniesController {
 	@GetMapping("")
 	public ModelAndView showDefault() {
 		ModelAndView mv = new ModelAndView("admin/companies/default");
+		// add companies so you can view them on the HTML
+		mv.addObject("companies", cr.findAll());
 		return mv;
 	}
 
